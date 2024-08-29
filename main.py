@@ -1,7 +1,9 @@
 import streamlit as st
 import elec_car as ec
 import pybasic as pb
-import travelspot as ts
+import travelspot as ts   #각자프로젝트(파이썬기초)
+import car_predict as cp
+
 
 # 로그인 화면
 st.sidebar.title('로그인')
@@ -18,8 +20,11 @@ if user_id =='abc' and user_pw =='1234':
     if menu == '탐색적 분석 : 전기자동차':
         ec.elec_exe()
     elif menu == '머신러닝':
-        st.header("공사중")
+        #st.header("공사중")
+        cp.ainl_main()
     elif menu == '파이썬기초':
         pb.basic()
     elif menu == '파이썬기초_미니프로젝트':
         ts.travel_main()
+        
+# 메인은 호출만 
